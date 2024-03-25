@@ -1,0 +1,16 @@
+---
+version: '3'
+
+tasks:
+  start:
+    desc: starts the application
+    cmds:
+      - npm run start
+  test:
+    desc: runs the test suites for the application
+    cmds:
+      - npm run test
+  build:
+    desc: builds the application
+    cmds:
+      - npm run build

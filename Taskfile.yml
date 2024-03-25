@@ -1,0 +1,16 @@
+
+version: '3'
+includes:
+  greeting: .tasks/helloworld.yaml
+  js: 
+    taskfile: services/frontend-app/taskfile.yaml
+    dir: ./services/frontend-app
+  go:
+    taskfile:  services/backend-app/Taskfile.yaml
+    dir: ./services/backend-app
+
+# tasks:
+#   default:
+#     cmds:
+#       - task --list-all
+#     silent: true
