@@ -18,6 +18,3 @@ tasks:
     desc: lints the application
     cmds:
       - npm run lint
-  format:
-    desc: formats the code in the application
-      - npm run format
