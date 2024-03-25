@@ -1,0 +1,9 @@
+FORMAT EXAMPLES:
+    []  TODO
+    [x] completed
+    [-] cacelled
+    #   comment
+
+GENERAL SETUP:
+    [] install prettier
+    [] setup kubernetes
