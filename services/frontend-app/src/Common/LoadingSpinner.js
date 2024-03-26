@@ -7,6 +7,7 @@ const LoadingSpinner = () => {
 
   useEffect(() => {
     const spinAnimation = async () => {
+      // eslint-disable-next-line no-constant-condition
       while (true) {
         await controls.start({
           rotate: 720,

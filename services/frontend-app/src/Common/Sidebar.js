@@ -15,8 +15,11 @@ import PublicIcon from "@mui/icons-material/Public";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import InfoIcon from "@mui/icons-material/Info";
+import PropTypes from "prop-types";
 
 export default function Sidebar({ open, setOpen }) {
+  //TODO: REWORK THIS
+  //eslint-disable-next-line no-unused-vars
   const toggleDrawer = () => (event) => {
     setOpen(false);
   };
@@ -67,3 +70,8 @@ export default function Sidebar({ open, setOpen }) {
     </div>
   );
 }
+
+Sidebar.propTypes = {
+  open: PropTypes.func.isRequired,
+  setOpen: PropTypes.func.isRequired,
+};

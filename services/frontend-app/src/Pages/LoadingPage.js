@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import LoadingSpinner from "../Common/LoadingSpinner";
+import PropTypes from "prop-types";
 
 const LoadingPage = ({ loading }) => {
   return loading ? (
@@ -26,5 +27,9 @@ const LoadingPage = ({ loading }) => {
   ) : (
     <></>
   );
+};
+
+LoadingPage.propTypes = {
+  loading: PropTypes.func.isRequired,
 };
 export default LoadingPage;

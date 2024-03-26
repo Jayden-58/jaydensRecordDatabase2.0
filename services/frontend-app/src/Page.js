@@ -7,6 +7,8 @@ import LoadingPage from "./Pages/LoadingPage";
 
 const Page = () => {
   const [open, setOpen] = React.useState(false);
+  //TODO: use setloading
+  //eslint-disable-next-line no-unused-vars
   const [loading, setLoading] = React.useState(false);
   return (
     <Box>

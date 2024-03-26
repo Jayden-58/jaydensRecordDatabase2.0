@@ -11,6 +11,7 @@ import { styled, alpha } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import { InputBase } from "@mui/material";
 import AlbumIcon from "@mui/icons-material/Album";
+import PropTypes from "prop-types";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -87,12 +88,12 @@ function Header({ setOpen }) {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               // fontWeight: 700,
-              // letterSpacing: '.3rem',
+              // letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            Jayden's Record Database
+            Jayden&apos;s Record Database
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -118,12 +119,12 @@ function Header({ setOpen }) {
               flexGrow: 1,
               fontFamily: "monospace",
               // fontWeight: 700,
-              // letterSpacing: '.3rem',
+              // letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            Jayden's Record Database
+            Jayden&apos;s Record Database
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -152,4 +153,8 @@ function Header({ setOpen }) {
     </AppBar>
   );
 }
+
+Header.propTypes = {
+  setOpen: PropTypes.func.isRequired,
+};
 export default Header;
