@@ -1,4 +1,4 @@
-name: Print Hello World
+name: Lint
 
 on: [push]
 
@@ -21,6 +21,12 @@ jobs:
           npm install -g @go-task/cli
 
       - name: install-deps
+        working-directory: services/frontend-app
         run: |
-          cd services/frontend-app
-          task js:lint
+          npm i
+      
+      - name: run lint
+        working-directory: services/frontend-app
+        run: | 
+          task lint
+
