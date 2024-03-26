@@ -1,11 +1,19 @@
-FORMAT EXAMPLES:
+FORMAT EXAMPLES REFERENCE:
     []  TODO
-    [x] completed
+    [x] completed (DATE)
     [-] cacelled
     #   comment
 
 GENERAL SETUP:
+    [x] setup TODO file (March 24, 2024)
+    [x] setup Eslint (March 24, 2024)
+    [x] setup prettier (March 25, 2024)
+    [x] setup taskfiles (March 25, 2024)
+    [x] setup workflows for CI/CD (March 25, 2024)
+
     [] setup kubernetes
-    [] fix lint issues frontend-app
     [] add linting and formatting for go
+    [] create readme for developers
+    [] plan schema
+    [] create documentation for users
 
