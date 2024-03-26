@@ -29,7 +29,6 @@ jobs:
           npm i
       
       - name: run lint
-        working-directory: services/frontend-app
         run: | 
           task js:lint
 
