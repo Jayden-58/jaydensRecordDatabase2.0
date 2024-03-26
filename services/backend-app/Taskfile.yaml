@@ -1,8 +1,5 @@
 ---
 version: '3'
 
-tasks:
-  start:
-    desc: starts the application
-    cmds:
-      - go run main.go
+includes: 
+  go: '../../.tasks/lang/go/go.yaml'

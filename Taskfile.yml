@@ -1,13 +1,13 @@
 ---
 version: '3'
 includes:
-  greeting: .tasks/helloworld.yaml
+  greeting: '.tasks/helloworld.yaml'
   js: 
-    taskfile: services/frontend-app/taskfile.yaml
-    dir: ./services/frontend-app
+    taskfile: '.tasks/lang/javascript/js.yaml'
+    dir: './.tasks/lang/javascript/js.yaml'
   go:
-    taskfile:  services/backend-app/Taskfile.yaml
-    dir: ./services/backend-app
+    taskfile: '.tasks/lang/go/go.yaml'
+    dir: './.tasks/lang/go/go.yaml'
 
 # tasks:
 #   default:

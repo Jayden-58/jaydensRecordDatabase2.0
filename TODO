@@ -5,5 +5,5 @@ FORMAT EXAMPLES:
     #   comment
 
 GENERAL SETUP:
-    [x] install prettier
     [] setup kubernetes
+    [] fix lint issues
