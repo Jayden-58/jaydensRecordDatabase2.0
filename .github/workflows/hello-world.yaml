@@ -20,6 +20,10 @@ jobs:
         run: |
           npm install -g @go-task/cli
 
+      - name: list
+        run: |
+          ls
+
       - name: install-deps
         working-directory: services/frontend-app
         run: |
