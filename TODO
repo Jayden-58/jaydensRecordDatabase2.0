@@ -5,5 +5,5 @@ FORMAT EXAMPLES:
     #   comment
 
 GENERAL SETUP:
-    [] install prettier
+    [x] install prettier
     [] setup kubernetes
