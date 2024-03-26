@@ -39,7 +39,7 @@ const LoadingSpinner = () => {
         originY: 0.5,
         overflow: "hidden",
         width: "150px",
-        height: "150px"
+        height: "150px",
       }}
     >
       <motion.div
@@ -51,7 +51,7 @@ const LoadingSpinner = () => {
         <motion.img
           src="/images/site/record-transparent.png"
           alt="record"
-          style={{width: "100%", rotate: 90}}
+          style={{ width: "100%", rotate: 90 }}
         />
       </motion.div>
     </motion.div>

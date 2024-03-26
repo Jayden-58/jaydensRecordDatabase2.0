@@ -1,5 +1,5 @@
 ---
-version: '3'
+version: "3"
 
 tasks:
   start:
@@ -18,3 +18,7 @@ tasks:
     desc: lints the application
     cmds:
       - npm run lint
+  format:
+    desc: formtats the application
+    cmds:
+      - npx prettier . --write
