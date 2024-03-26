@@ -6,4 +6,6 @@ FORMAT EXAMPLES:
 
 GENERAL SETUP:
     [] setup kubernetes
-    [] fix lint issues
+    [] fix lint issues frontend-app
+    [] add linting and formatting for go
+

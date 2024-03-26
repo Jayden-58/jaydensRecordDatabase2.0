@@ -3,8 +3,24 @@ name: Print Hello World
 on: [push]
 
 jobs:
-  print_hello_world:
+
+  lint:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [21]
+
     steps:
-    - name: Print Hello World
-      run: echo "Hello, world!"
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}        
+
+      - name: Install Task
+        run: |
+          npm install -g @go-task/cli
+
+      - name: install-deps
+        run: |
+          cd services/frontend-app
+          task js:lint
