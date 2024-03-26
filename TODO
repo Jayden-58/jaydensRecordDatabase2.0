@@ -11,7 +11,7 @@ GENERAL SETUP:
     [x] setup taskfiles (March 25, 2024)
     [x] setup workflows for CI/CD (March 25, 2024)
 
-    [] setup kubernetes
+    [] setup kubernetes and kustomize
     [] add linting and formatting for go
     [] create readme for developers
     [] plan schema
